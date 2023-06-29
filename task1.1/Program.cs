@@ -24,7 +24,7 @@ void PrintArray(int[] arr)
 {
     for (int i = 0; i < arr.Length; i++)
     {
-        Console.Write($"{arr[i]} ");
+        Console.Write($"{arr[i]}");
     }
 }
 
@@ -44,6 +44,5 @@ int SearchArray (int[] arr)
 
 int size = Prompt("Введите размерность массива: ");
 int[] array = GetArray(size);
-PrintArray(array);
-Console.Write("-->");
-Console.WriteLine(SearchArray(array));
+Console.Write($"[{string.Join(", ", array)}] --> ");
+Console.Write(SearchArray(array));
